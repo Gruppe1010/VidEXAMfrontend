@@ -1,0 +1,215 @@
+
+body{
+  padding-top: 100px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.menubar-text{
+  size: 30px;
+}
+
+
+
+.section-content{
+  padding-top: 100px;
+  font-size: 1.5rem;
+  position: relative;
+  margin: auto;
+  width: 50%;
+}
+
+.headline-row{
+  padding-top: 100px;
+  font-size: 1.5rem;
+  position: relative;
+  margin: auto;
+  width:100%;
+}
+
+.bold{
+  font-weight: bolder;
+}
+
+.form-lab{
+  position: relative;
+  left: 0px;
+}
+
+.form-inp{
+  position: relative;
+  float: right;
+  width: 50%;
+}
+
+/*https://stackoverflow.com/questions/4137255/checkboxes-in-web-pages-how-to-make-them-bigger*/
+.double {
+  float: top;
+  float: right;
+  top: 0px;
+  zoom: 1;
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  -moz-transform: scale(2);
+  transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+}
+
+
+.btn-mine {
+  z-index: 100;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 50%;
+}
+
+
+.btn-mine {
+  z-index: 100;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 50%;
+}
+
+
+.edit-colour{
+  background-color: #97c4f1; /* Blue background */
+}
+/* Darker background on mouse-over */
+.edit-colour:hover {
+  background-color: #67aaf3; /* Blue background */
+}
+
+.delete-colour{
+  background-color: #d95a5a; /* Blue background */
+}
+/* Darker background on mouse-over */
+.delete-colour:hover {
+  background-color: #d72121; /* Blue background */
+}
+
+
+.save-colour{
+  background-color: #a0e565; /* Blue background */
+}
+/* Darker background on mouse-over */
+.save-colour:hover {
+  background-color: #55cb06; /* Blue background */
+}
+
+
+
+
+
+
+.center{
+  text-align: center;
+}
+
+.input-style{
+  text-align: center;
+  width: 100%;
+}
+
+
+.right{
+  right: 20px;
+}
+
+.absolute{
+  position: absolute;
+}
+
+#header{
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content{
+  list-style-type: none;
+  margin: auto;
+  border: 1px #4b0326;
+}
+
+#content li{
+  margin: 3px 3px 3px 3px;
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  font-size: 1.1em;
+  height: 45px;
+}
+
+#content li span{
+  position: relative;
+  margin-top: 0.2rem;
+}
+
+.li-width{
+  width: 600px;
+}
+
+.custom-checkbox{
+  position: relative;
+  float: left;
+  left: 20px;
+  top: 1px;
+}
+
+.custom-checkbox:hover {
+  color: lightgrey;
+}
+
+.delete {
+  position: relative;
+  font-size: 30px;
+  float: right;
+  right: 10px;
+  top: -9px;
+}
+
+.delete::after{
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+}
+
+span.delete {
+  color: white;
+}
+
+span.delete:hover {
+  color: lightgrey;
+}
+
+span.parish-name {
+  color: white;
+}
+
+span.parish-name:hover {
+  color: lightgrey;
+}

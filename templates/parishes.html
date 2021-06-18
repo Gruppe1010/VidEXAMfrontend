@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Fane-titel -->
+  <title>Sogne</title> <!-- ! HER -->
+  <!-- Fane-ikon -->
+  <link rel="icon" type="image/png" href="../img/sunflower.jpg"/>
+  <!-- CSS -->
+  <link href="../css/exam-styles.css" rel="stylesheet" />
+  <!-- SCRIPTS -->
+  <!-- <script src="../js/menubar.js"></script> -->
+  <script src="../js/parishes.js"></script>
+
+
+
+
+  <!-- meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- IMPORTS -->
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="../css/bootstrap-styles.css" rel="stylesheet" />
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<!-- NAVIGATION-->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container">
+    <!-- MENUPUNKTER --> <!-- ! HER -->
+    <a class="navbar-brand" href="index.html">Kommuner</a>
+    <a class="navbar-brand underline" href="parishes.html">Sogne</a>
+    <a class="navbar-brand" href="createParish.html">Opret sogn</a>
+
+    <!--TODO muligvis fjern disse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+      <!--
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item "><a class="nav-link" href="andre/createUser.html" id="createUser">Opret bruger</a></li>
+        <li class="nav-item" ><a class="nav-link" href="andre/logIn.html" id="logIn">Log Ind</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+
+<body>
+
+<header class="masthead text-center text-white">
+  <div class="masthead-content">
+    <div class="container">
+      <h1 class="masthead-heading mb-0" id="header">Alle Sogne</h1>
+    </div>
+  </div>
+  <div class="bg-circle-1 bg-circle"></div>
+  <div class="bg-circle-2 bg-circle"></div>
+  <div class="bg-circle-3 bg-circle"></div>
+  <div class="bg-circle-4 bg-circle"></div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="headline-row" id="content">
+
+
+      <!-- Overskrifter -->
+      <div class="row bold">
+        <div class="group col-md-2">
+          <span style="float: right">Nedlukket</span>
+        </div>
+        <div class="group col-md-2 center">Sognekode</div>
+        <div class="group col-md-4 center">Sogn</div>
+        <div class="group col-md-2 center">Smittetryk</div>
+        <div class="group col-md-2 center">Kommunekode</div>
+      </div>
+
+      <!-- skabelon som IKKE ses -->
+      <div class="row" id="row" hidden>
+
+        <button class="btn-mine edit-colour absolute" title="Rediger" id="editButton">
+          <!--<i class="fas fa-pencil-alt"></i>-->
+        </button>
+
+        <div class="group col-md-2" id="checkmark">
+          <div class="double">
+            <input class="form-check-input right" type="checkbox" id="gridCheck" disabled>
+          </div>
+        </div>
+
+        <div class="group col-md-2 center" id="code">4444</div>
+        <div class="group col-md-4 center" id="name">Skabelon</div>
+        <div class="group col-md-2 center" id="rNumber">2.3</div>
+        <div class="group col-md-2 center" id="municipalityCode">101</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer-->
+<footer class="py-5 bg-black">
+  <div class="container"><p class="m-0 text-center text-white small">Copyright &copy; Your Website 2021</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<!--<script src="js/scripts.js"></script>-->
+</body>
+</html>
