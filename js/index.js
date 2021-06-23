@@ -1,7 +1,7 @@
-
 let divContent;
 
 // når siden er loadet
+
 document.addEventListener('DOMContentLoaded', function () {
   divContent = document.getElementById('content');
 
@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   loadPage()
     .then(municipalities => showMunicipalities(municipalities));
 });
+
 
 
 
@@ -54,52 +55,23 @@ function showOneMunicipality(mun){
   // kopierer allerede lavet row (som er hidden)
   const row = document.getElementById('row');
   const rowClone = row.cloneNode(true);
-  //rowClone.hidden = false;
+  rowClone.hidden = false; // @ 1f - linje tilføjet
 
   // code
-  const code = document.getElementById('code');
-  code.innerText = mun.code;
+  rowClone.getElementsByClassName('code')[0].innerText = mun.code;
+  /* @ Før:
+    const code = document.getElementById('code');
+    code.innerText = mun.code;
+  * */
+
   // name
-  const name = document.getElementById('name');
-  name.innerText = mun.name;
+  rowClone.getElementsByClassName('name')[0].innerText = mun.name;
 
   // rNumber
-  const rNumber = document.getElementById('rNumber');
-  rNumber.innerText = mun.currentRNumber;
+  rowClone.getElementsByClassName('rNumber')[0].innerText = mun.currentRNumber;
 
   divContent.appendChild(rowClone);
 }
-
-function changeLockDown(){
-
-}
-
-function deleteSlide(parishId){
-  const url = `http://localhost:8082/api/parishes/${parishId}`;
-
-
-  const requestOptions = {
-    method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json', // betyder == vi sender et json i string-format
-    },
-    //redirect: 'follow'
-  };
-
-  function checkIfSuccess(response, parishId){
-    if(response.status >= 200 && response.status < 300){
-      document.getElementById(`liParish${parishId}`).remove();
-    }
-    else if(response.status === 409){
-      alert("Der er gået noget galt");
-    }
-    // else bliver den catchet i fetch
-  }
-  fetch(url, requestOptions)
-    .then(data => checkIfSuccess(data, slideId))
-    .catch(error => console.log("Fejl i fetch, index.js: ", error));
-}
-
 
 
 
